@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --yellow: hsl(47, 88%, 63%);
+        --white: hsl(0, 0%, 100%);
+        --gray500: hsl(0, 0%, 42%);
+        --gray900: hsl(0, 0%, 7%);
+        --bodyFont: 16px;
+        --marginBottom: 20px;
+      }
+      .white{
+        color: var(--white);
+      }
+      .gray-500{
+        color: var(--gray500);
+      }
+      .gray-900{
+        color: var(--gray900);
+      }
+      .yellow{
+        color: var(--yellow)
+      }
+      body {
+        font-size: 16px;
+        background-color: var(--yellow);
+        display:grid;
+        place-items: center;
+      }
+      main{
+        background-color: var(--yellow);
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      #card {
+        height: fit-content;
+        width: 330px;
+        background-color: var(--white);
+        padding: 20px;
+        
+        box-shadow: 8px 8px black;
+      }
+      #card:hover{
+        cursor: pointer;
+      }
+      #card:hover h2{
+        color:var(--yellow)
+      }
+      #card>img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .round{
+        border-radius: 10px;
+      }
+
+      #tag{
+        background-color: var(--yellow);
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: large;
+        margin: var(--marginBottom) 0px;
+      }
+      #date{
+        color: var(--gray900);
+        margin-bottom: var(--marginBottom);
+      }
+      #text>h2{
+        margin-bottom: var(--marginBottom)
+      }
+      #text>p{
+        margin-bottom: var(--marginBottom);
+      }
+      .figtree-500 {
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .figtree-800 {
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+      }
+      #author{
+        display: flex;
+        align-items: center;
+      }
+      #author>h3{
+        font-weight: 800;
+      }
+
+      #author>img{
+        background-color: antiquewhite;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+      @media(min-width:600px) {
+        #card{
+          width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="figtree-500">
+      <div id="card" class="round">
+        <img class="round" src="assets/images/illustration-article.svg" alt="" />
+        <div id="text">
+          <div id="tag">Learning</div>
+          <div id="date">Published 21 Dec 2023</div>
+          <h2 class="figtree-800">HTML & CSS foundations</h2>
+          <p class="gray-500">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <div id="author">
+            <img src="assets/images/image-avatar.webp" alt="" />
+            <h3>Greg Hooper</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://lakhwinder.netlify.app" target="_blank">Lakhwinder Singh</a>.
+    </div>
+  </body>
+</html>
