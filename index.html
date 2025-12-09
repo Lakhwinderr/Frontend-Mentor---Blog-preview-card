@@ -133,10 +133,22 @@
           width: 400px;
         }
       }
+      .visually-hidden{
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: -1;
+        clip: rect(0, 0, 0, 0);
+        white-space: no-wrap;
+        border: 0;
+        overflow: hidden;
+        position: absolute;
+      }
     </style>
   </head>
   <body>
     <main class="figtree-500">
+      <h1 class="visually-hidden">QR Card Component</h1>
       <div id="card" class="round">
         <img class="round" src="assets/images/illustration-article.svg" alt="" />
         <div id="text">
@@ -155,11 +167,11 @@
       </div>
     </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://lakhwinder.netlify.app" target="_blank">Lakhwinder Singh</a>.
-    </div>
+    </footer>
   </body>
 </html>
