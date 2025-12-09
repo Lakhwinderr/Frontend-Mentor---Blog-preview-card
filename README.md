@@ -84,6 +84,10 @@ Users should be able to:
 - Need to learn more about flexbox axes.
 - How to use grids in CSS? 
 
+## Resources
+
+- Visit [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit) to know about ```object-fit``` property.
+
 ## Author
 
 - Website - [Lakhwinder Singh](https://lakhwinder.netlify.app)
